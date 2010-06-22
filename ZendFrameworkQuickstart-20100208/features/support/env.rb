@@ -18,3 +18,4 @@ World do
   session
 end
 
+require 'cucumber/formatter/unicode' 
