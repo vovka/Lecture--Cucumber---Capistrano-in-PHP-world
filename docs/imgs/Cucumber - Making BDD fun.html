@@ -1,0 +1,407 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0018)http://cukes.info/ -->
+<HTML xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <META name="google-site-verification" content="B6HZA7NtQobSg5I5las34NYhgfkwLy6zSbnvXIXo6_w">
+  <TITLE>Cucumber - Making BDD fun</TITLE>
+  <LINK rel="icon" type="image/png" href="http://cukes.info/images/cucumber64x64.png">
+  <LINK rel="stylesheet" href="./Cucumber - Making BDD fun_files/global.css" type="text/css" charset="utf-8">
+  <!--[if IE 6]>
+    <link href="/css/ie6.css" rel="stylesheet" type="text/css" />
+  <![endif]-->
+  <!--[if IE 7]>
+    <link href="/css/ie7.css" rel="stylesheet" type="text/css" />
+  <![endif]-->
+  <SCRIPT src="./Cucumber - Making BDD fun_files/scripts.js" type="text/javascript" charset="utf-8"></SCRIPT>
+
+</HEAD><BODY>
+<DIV id="header">
+  <DIV class="navigation">
+    <UL id="nav">
+      <LI>
+        <H4><A href="http://github.com/aslakhellesoy/cucumber/wikis">Wiki</A></H4>
+        <P><A href="http://github.com/aslakhellesoy/cucumber/wikis">Detailed documentation</A></P>
+      </LI>
+      <LI>
+        <H4><A href="http://github.com/aslakhellesoy/cucumber/tree/master/examples/i18n">Examples</A></H4>
+        <P><A href="http://github.com/aslakhellesoy/cucumber/tree/master/examples/i18n">Use your mother tongue</A></P>
+      </LI>
+      <LI>
+        <H4><A href="http://wiki.github.com/aslakhellesoy/cucumber/tutorials-and-related-blog-posts">Tutorials</A></H4>
+        <P><A href="http://wiki.github.com/aslakhellesoy/cucumber/tutorials-and-related-blog-posts">By the community</A></P>
+      </LI>
+      <LI>
+        <H4><A href="http://rspec.lighthouseapp.com/projects/16211-cucumber/overview">Lighthouse</A></H4>
+        <P><A href="http://rspec.lighthouseapp.com/projects/16211-cucumber/overview">Issue tracker</A></P>
+      </LI>
+      <LI>
+        <H4><A href="http://groups.google.com/group/cukes">Mailing list</A></H4>
+        <P><A href="http://groups.google.com/group/cukes">Ask questions</A></P>
+      </LI>
+      <LI>
+        <H4><A href="http://webchat.freenode.net/?channels=cucumber">IRC</A></H4>
+        <P><A href="http://webchat.freenode.net/?channels=cucumber">Get instant help</A></P>
+      </LI>
+    </UL>
+  </DIV>
+  <H2 id="logo"><A href="./Cucumber - Making BDD fun_files/Cucumber - Making BDD fun.html">Cucumber</A></H2>
+  <P class="title">Behaviour Driven Development with elegance and joy</P>
+</DIV><!-- /#header -->
+<DIV id="content">
+
+  <DIV class="inner">
+    <DIV class="columns threecol">
+      <DIV class="column first">
+        <H2>1: Describe behaviour in plain text</H2>
+        <IMG src="./Cucumber - Making BDD fun_files/feature.png" alt="Feature">
+      </DIV>
+
+      <DIV class="column middle">
+        <H2>2: Write a step definition in Ruby</H2>
+        <IMG src="./Cucumber - Making BDD fun_files/calculator_steps.png" alt="Calculator Steps">
+      </DIV>
+
+      <DIV class="column last">
+        <H2>3: Run and watch it fail</H2>
+        <IMG src="./Cucumber - Making BDD fun_files/failing.png" alt="Failing output">
+      </DIV>
+    </DIV>
+
+    <DIV class="columns threecol">
+      <DIV class="column first">
+        <H2>4. Write code to make the step pass</H2>
+        <IMG src="./Cucumber - Making BDD fun_files/calculator.png" alt="Feature">
+      </DIV>
+
+      <DIV class="column middle">
+        <H2>5. Run again and see the step pass</H2>
+        <IMG src="./Cucumber - Making BDD fun_files/pending.png" alt="Pending output">
+      </DIV>
+
+      <DIV class="column last">
+        <H2>6. Repeat 2-5 until green like a cuke</H2>
+        <IMG src="./Cucumber - Making BDD fun_files/passing.png" alt="Passing output">
+      </DIV>
+    </DIV>
+
+    <DIV class="columns threecol">
+      <DIV class="column first">
+        <H2>7. Repeat 1-6 until the money runs out</H2>
+        <P>
+          Cucumber lets software development teams describe how software should behave in plain text.
+          The text is written in a 
+          <A href="http://www.martinfowler.com/bliki/BusinessReadableDSL.html">business-readable domain-specific language</A> 
+          and serves as documentation, automated tests and development-aid - all rolled into one format.
+        </P>
+        <P>
+          Cucumber works with Ruby, Java, .NET, Flex or web applications written in any language.
+          It has been translated to over 30 spoken languages.
+        </P>
+        
+        <P>Cucumber also supports more succinct tests in tables - similar to what <A href="http://fit.c2.com/"><SPAN class="caps">FIT</SPAN></A> does. Dig around in the examples and documentation to learn more about Cucumber tables.</P>
+
+        <P>
+          <SCRIPT type="text/javascript" src="./Cucumber - Making BDD fun_files/project_users.js"></SCRIPT><A href="http://www.ohloh.net/stack_entries/new?project_id=cucumber&ref=WidgetProjectUsers" onmouseout="this.style.background = &#39;url(http://www.ohloh.net/images/stack/iusethis/green.png) 0px 0px no-repeat&#39;" onmouseover="this.style.background = &#39;url(http://www.ohloh.net/images/stack/iusethis/green.png) 0 -85px no-repeat&#39;" style="border-bottom:none; display:block;background: url(http://www.ohloh.net/images/stack/iusethis/green.png) 0px 0px no-repeat; text-decoration: none; width: 70px; height: 85px;" target="_top">
+  </A></P><A href="http://www.ohloh.net/stack_entries/new?project_id=cucumber&ref=WidgetProjectUsers" onmouseout="this.style.background = &#39;url(http://www.ohloh.net/images/stack/iusethis/green.png) 0px 0px no-repeat&#39;" onmouseover="this.style.background = &#39;url(http://www.ohloh.net/images/stack/iusethis/green.png) 0 -85px no-repeat&#39;" style="border-bottom:none; display:block;background: url(http://www.ohloh.net/images/stack/iusethis/green.png) 0px 0px no-repeat; text-decoration: none; width: 70px; height: 85px;" target="_top"><DIV style="width: 70px; line-height: 1.2em; height: 85px">
+    <P style="font-weight: bold; font-size:18pt; text-align:center; padding:23px 0px 0px 0px; color:#fff; font-family:helvetica; letter-spacing:-0.05em; line-height: 1.2em; margin:0px">175</P>
+  </DIV>
+</A>
+
+        <P></P>
+
+        <H2>Background and Credits</H2>
+
+        <P>Cucumber is Aslak Hellesøy’s rewrite of RSpec’s “Story runner”, which was originally written by Dan North. (Which again was a rewrite of his first implementation - “RBehave”). Early versions of “Story runner”
+        required that stories be written in Ruby. Shortly after, David Chelimsky added 
+        <A href="http://blog.davidchelimsky.net/articles/2007/10/21/story-runner-in-plain-english">plain text</A> support with
+        contributions from half a dozen other people.</P>
+
+        <P>
+        In April 2008, Aslak Hellesøy started the Cucumber project to address the usability problems of the RSpec Story Runner. <A href="http://blog.josephwilk.net/">Joseph Wilk</A> and <A href="http://benmabey.com/">Ben Mabey</A> joined as regular contributors when Cucumber was just a little Gherkin.  <A href="http://blog.mattwynne.net/">Matt Wynne</A> joined the Cucumber team in September 2009 after. <A href="http://twitter.com/lifeinzembla">Mike Sassak</A> and <A href="http://twitter.com/algorhythms">Gregory Hnatiuk</A> joined in October 2009 after their great work on a faster parser for Cucumber. In addition to the core team over <A href="http://pastie.org/460907">over 160 </A> developers have contributed patches and bugfixes.
+        </P>
+
+        <P>The meta-language that Cucumber uses is based on several conversations and blog posts
+        by <A href="http://dannorth.net/">Dan North</A>, <A href="http://abc.truemesh.com/">Chris Matts</A>, 
+        <A href="http://sirenian.livejournal.com/">Liz Keogh</A>, <A href="http://blog.davidchelimsky.net/">David Chelimsky</A> and dozens of people on the RSpec mailing list.
+        </P>
+
+      </DIV>
+
+      <DIV class="column second">
+        <H2>We want swag!</H2>
+        
+        <A href="http://www.pledgie.com/campaigns/7149"><IMG alt="Click here to lend your support to: cucumber and make a donation at www.pledgie.com !" src="./Cucumber - Making BDD fun_files/7149.png" border="0"></A>
+
+        <P>
+          The money raised for this campaign will be spent to produce Cucumber swag to promote Cucumber: T-shirts, cups and other things.
+        </P>
+
+        <P>
+          The swag will be given away at conferences, and if enough money is raised, swag will also be sent to people who have contributed to Cucumber, including donors.
+        </P>
+
+        <H2>Learn more!</H2>
+
+        <P>
+          <A href="http://www.pragprog.com/titles/achbd">
+            <IMG src="./Cucumber - Making BDD fun_files/achbd.jpg" alt="The RSpec Book: Behaviour Driven Development with RSpec, Cucumber and Friends">
+          </A>
+          
+          The RSpec book has several chapters dedicated to Cucumber.
+        </P>
+
+        <P>
+          <A href="http://agiletoolkit.libsyn.com/index.php?post_id=580898">
+            <IMG src="./Cucumber - Making BDD fun_files/podcast.png" alt="Agile Toolkit Podcast">
+          </A>
+
+          Bob Payne of the Agile Toolkit interviews Aslak Hellesøy.
+        </P>
+
+        <P>
+          <A href="http://www.teachmetocode.com/screencasts/4">
+            <IMG src="./Cucumber - Making BDD fun_files/cuke_tv_carl_youngblood_outside_in.png" alt="Introduction to Outside-in Development with Cucumber - Carl Youngblood">
+          </A>
+          
+          September 6, 2009 - Introduction to Outside-in Development with Cucumber - Carl Youngblood.
+        </P>
+
+        <P>
+          <A href="http://obtiva.com/screencasts/Cucumber_Driven_Classes_5_11_qtob.mov">
+            <IMG src="./Cucumber - Making BDD fun_files/cuke_tv_obtiva_09.png" alt="Ruby Classes via Cucumber  - Joseph Leddy &amp; Leah Welty-Rieger from Obtiva">
+          </A>
+          
+          July 24, 2009 - Ruby Classes via Cucumber by Joseph Leddy &amp; Leah Welty-Rieger at <A href="http://obtiva.com/">Obtiva</A>.
+        </P>
+        
+        <P>
+          <A href="http://scotland-on-rails.s3.amazonaws.com/1A06_JosephWilk-SOR.mp4">
+            <IMG src="./Cucumber - Making BDD fun_files/cuke_tv_joseph_wilk_scotland_on_rails_09.png" alt="Outside In with Cucumber - Joseph Wilk at Scotland on Rails 2009">
+          </A>
+          
+          May 21, 2009 - Joseph Wilk from the Cucumber team presents Outside-In development with Cucumber at Scotland On Rails 2009.
+        </P>
+        
+        <P>
+          <A href="http://railscasts.com/episodes/159-more-on-cucumber">
+            <IMG src="./Cucumber - Making BDD fun_files/cuke_tv_rails_casts_more.png" alt="More on Cucumber - Ryan Bates Railscasts">
+          </A>
+          
+          Apr 27, 2009 - Ryan Bates from <A href="http://railscasts.com/">RailsCasts</A> dives into tables, scenario outlines
+          and tags.
+        </P>
+
+        <P>
+          <A href="http://smartic.us/2009/04/01/introduction-to-acceptance-testing-ruby-web-applications/">
+            <IMG src="./Cucumber - Making BDD fun_files/cuke_tv_bryan_liles.png" alt="Acceptance-Testing Ruby Web Apps - Bryan Liles">
+          </A>
+          
+          Apr 01, 2009 - <A href="http://smartic.us/">Bryan Liles</A> gives an introduction to Cucumber, Webrat and Integrity.
+        </P>
+
+        <P>
+          <A href="http://railscasts.com/episodes/155-beginning-with-cucumber">
+            <IMG src="./Cucumber - Making BDD fun_files/cuke_tv_rails_casts_beginning.png" alt="Beginning with Cucumber - Ryan Bates Railscasts">
+          </A>
+          
+          Mar 30, 2009 - Ryan Bates from <A href="http://railscasts.com/">RailsCasts</A> demonstrates
+          how to get started with Cucumber and Ruby on Rails.
+        </P>
+
+        <P>
+          <A href="http://mwrc2009.confreaks.com/14-mar-2009-15-00-bdd-with-cucumber-ben-mabey.html">
+            <IMG src="./Cucumber - Making BDD fun_files/cuke_tv_ben_mabey_mwrc.png" alt="Outside-In Development with Cucumber at MountainWest RubyConf">
+          </A>
+          
+          Mar 14, 2009 - <A href="http://benmabey.com/">Ben Mabey</A> presents at <A href="http://mtnwestrubyconf.org/2009/">MountainWest RubyConf</A>. <A href="http://www.slideshare.net/bmabey/outsidein-development-with-cucumber/download">Download the slides</A> and follow along!
+        </P>
+
+        <P>
+          <A href="http://pivotallabs.com/talks/38-making-a-case-for-cucumber">
+            <IMG src="./Cucumber - Making BDD fun_files/cuke_tv_jeff_dean.png" alt="Discussion on Cucumber&#39;s Usefulness and Value">
+          </A>
+          
+          Feb 04, 2009 - Jeff Dean talks about his experience with Cucumber at 
+          <A href="http://pivotallabs.com/">Pivotal Labs</A>.
+        </P>
+        <P>
+          <A href="http://vimeo.com/2871256">
+            <IMG src="./Cucumber - Making BDD fun_files/cuke_tv_watir.png" alt="Cucumber and Watir">
+          </A>
+          Jan 18, 2009 - <A href="http://redsquirrel.com/dave/">Dave Hoover</A> demonstrates how to use 
+          <A href="http://wtr.rubyforge.org/">Watir</A> with Cucumber. Actually, he uses his own library 
+          <A href="http://safariwatir.rubyforge.org/">SafariWatir</A>, 
+          but you could easily swap it with 
+          <A href="http://wtr.rubyforge.org/">Watir</A>, 
+          <A href="http://wiki.openqa.org/display/WTR/FireWatir/">FireWatir</A>, 
+          <A href="http://code.google.com/p/chrome-watir/">ChromeWatir</A> or 
+          <A href="http://celerity.rubyforge.org/">Celerity</A>. Sorry - no sound.
+        </P>
+        
+        <P>
+          <A href="http://www.cocoacast.com/?q=node/204">
+            <IMG src="./Cucumber - Making BDD fun_files/podcast.png" alt="Podcast">
+          </A>
+
+          Cocoacast interview with Aslak Hellesøy - creator of Cucumber.
+        </P>
+
+        <P>
+          <A href="http://www.oredev.org/prod/oredev/site.nsf/docsbycodename/session?opendocument&sid=CE40988ACC15EFC9C125758A00731385&day=5&track=F8E03A7BE50A2677C12575A500496201"><IMG src="./Cucumber - Making BDD fun_files/BannerSpeaker5.gif" border="0"></A>
+          <BR>
+          Aslak Hellesøy presented Cucumber at Øredev in Malmö on Friday 6th on November.
+        </P>
+
+        <P>
+          <A href="http://www.eurostarconferences.com/">
+          <IMG src="./Cucumber - Making BDD fun_files/eurostar-2009-350x40.jpg" width="300" alt="EuroSTAR 2009" title="EuroSTAR 2009">
+          </A>
+          <BR>
+          Aslak Hellesøy presented Cucumber at the <A href="http://www.eurostarconferences.com/conferences/session-details.aspx?sessionId=112">EuroSTAR</A> conference
+          in Stockholm on Thursday 3rd of December.
+        </P>
+        
+        <P>
+          <A href="http://rubyfoolondon.com/ruby-london-2009/presentation/Do+you+speak+my+language%3F">
+          <IMG src="./Cucumber - Making BDD fun_files/ruby-foo-2009.jpg" title="RubyFoo 2009">
+          </A>
+          <BR>
+          Aslak Hellesøy presented Cucumber and Cuke4Duke at RubyFoo in London.
+        </P>
+
+        <P>
+          <A href="http://agile2009.agilealliance.org/node/1276">
+          <IMG src="./Cucumber - Making BDD fun_files/Agile2009_WebBadges_Speaker.png" title="Agile 2009">
+          </A>
+          <BR>
+          Aslak Hellesøy and Dean Wampler presented Cucumber on the JVM at Agile 2009 in Chicago.
+        </P>
+
+        <P>
+          <A href="http://en.oreilly.com/rails2009/public/schedule/detail/7722">
+          <IMG src="./Cucumber - Making BDD fun_files/rails2009_banner_speaking_210x60.jpg" width="210" height="60" border="0" alt="RailsConf 2009" title="RailsConf 2009">
+          </A>
+          <BR>
+          Aslak Hellesøy presented Cucumber at RailsConf in Las Vegas and got some good <A href="http://www.infoworld.com/d/developer-world/cucumber-hot-technology-developer-event-447">press</A>.
+        </P>
+
+      </DIV>
+
+      <DIV class="column third">
+        <H2>Download</H2>
+        <P>
+          You need Ruby installed. Then just run<BR>
+          <CODE>gem install cucumber</CODE><BR>
+          from a command prompt. Now, run <BR>
+          <CODE>cucumber --help</CODE><BR>
+        </P>
+
+        <P>
+          The <A href="http://github.com/aslakhellesoy/cucumber/wikis">wiki</A> has more information.
+        </P>
+        
+        <H2>Testimonials</H2>
+        	<BLOCKQUOTE>
+        		<P>My attention-span is short so I may be forgetting something but I think Cucumber could be the most important piece of software released in 2008 for Ruby-based developers.</P>
+        	</BLOCKQUOTE>
+
+
+        	<P>—<A href="http://drnicwilliams.com/2008/10/31/newgem-100-all-thanks-to-cucumber/"><EM>Dr Nic</EM></A></P>
+
+
+        	<BLOCKQUOTE>
+        		<P>We are currently rolling out Cucumber to all projects within <SPAN class="caps">BBC</SPAN> Worldwide. We use it with great success in combination with Watir and Firewatir to automate our web acceptance tests. The natural language format is a great communication facilitator between all stakeholders.</P>
+        	</BLOCKQUOTE>
+
+
+        	<P>—Aidy Lewis</P>
+
+
+        	<BLOCKQUOTE>
+        		<P>If you’re looking for a higher level of abstraction in your tests, it’s definitely worth checking out.</P>
+        	</BLOCKQUOTE>
+
+
+        	<P>—<A href="http://www.rubyinside.com/cucumber-the-latest-in-ruby-testing-1342.html"><EM>Mike Gunderloy on Ruby Inside</EM></A></P>
+
+
+        	<BLOCKQUOTE>
+        		<P>I finally looked into cucumber last week and immediately loved it.  Within a couple hours I had several features written for an existing application. By the end of the next day, our whole team was writing cucumber features, and enjoying it!  Cucumber seems to have brought back an excitement to testing that I haven’t felt for a while (since my first few weeks with RSpec).</P>
+        	</BLOCKQUOTE>
+
+
+        	<P>—<A href="http://www.ruby-forum.com/topic/166392#730725"><EM>Brandon Keepers</EM></A></P>
+
+
+        	<BLOCKQUOTE>
+        		<P>Seeing what you guys are doing is just over-the-top cool. <SPAN class="caps">BDD</SPAN>
+        is great, Domain Driven Design is great. Stuff I wish I knew 20 years
+        ago.</P>
+        	</BLOCKQUOTE>
+
+
+        	<P>—<A href="http://www.nabble.com/cucumber-docs-tt20370423.html#a20372905"><EM>Tim Walker</EM></A></P>
+
+
+        	<BLOCKQUOTE>
+        		<P>I started using Cucumber yesterday and it was really easy.</P>
+        	</BLOCKQUOTE>
+
+
+        	<P>—<A href="http://barkingiguana.com/2008/11/11/getting-started-with-story-driven-development-for-rails-with-cucumber"><EM>Craig Webster</EM></A></P>
+
+
+        	<BLOCKQUOTE>
+        		<P>Cucumber allows you to write feature documentation in Plain Text. It means you could sit with your Client or Business Analyst to write down the features to be build on your application.</P>
+
+        	</BLOCKQUOTE>
+
+
+        	<P>—<A href="http://advent2008.hackruby.com/past/2008/12/4/cool_as_a_cucumber/"><EM>Lakshan Perera’s Ruby Advent 2008</EM></A></P>
+
+
+        	<BLOCKQUOTE>
+        		<P>Cucumber is fast becoming the standard for acceptance testing in Rails. Cucumber is a <SPAN class="caps">BDD</SPAN> tool for specification of application features and user scenarios in plain text. It’s powered by Ruby, supports over 20 spoken languages, and integrates with other testing platforms.</P>
+
+        	</BLOCKQUOTE>
+
+
+        	<P>—<A href="http://github.com/blog/258-github-rebase-7"><EM>Nick Quaranto – GitHub Featured project December 2008</EM></A></P>
+
+
+        	<BLOCKQUOTE>
+        		<P>God <SPAN class="caps">DAMN I</SPAN> want a <SPAN class="caps">BDD</SPAN> tool for Python that runs as well as cucumber 0.0003 or whatever it’s called does already. Dammit.</P>
+
+        	</BLOCKQUOTE>
+
+
+        	<P>—<A href="http://twitter.com/Vaguery/statuses/1098306887"><EM>Bill Tozier</EM></A></P>
+
+
+        	<BLOCKQUOTE>
+        		<P>Continuous Integration Blueprints: How to Build an Army of Killer Robots With Hudson and Cucumber.</P>
+        	</BLOCKQUOTE>
+
+        	<P>—<A href="http://www.softwarebloat.com/2008/11/19/continuous-integration-blueprints-how-to-build-an-army-of-killer-robots-with-hudson-and-cucumber/"><EM>Robert Boyd</EM></A></P>
+      </DIV>
+    </DIV>
+  </DIV>
+</DIV><!-- /#content -->
+<DIV id="footer">
+  Cucumber was written by <A href="http://blog.aslakhellesoy.com/">Aslak Hellesøy</A>, 
+  Chief Scientist in <A href="http://bekk.no/">BEKK</A>. It has been extended and improved 
+  by <A href="https://www.ohloh.net/p/cucumber/factoids/1934441">over 160</A> developers
+  around the world. Logo by <A href="http://gid.tumblr.com/">Gideon Bullock</A>.
+</DIV><!-- /#footer -->
+<SCRIPT type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</SCRIPT><SCRIPT src="./Cucumber - Making BDD fun_files/ga.js" type="text/javascript"></SCRIPT>
+<SCRIPT type="text/javascript">
+try {
+var pageTracker = _gat._getTracker("UA-6729167-1");
+pageTracker._trackPageview();
+} catch(err) {}</SCRIPT>
+
+
+</BODY></HTML>
